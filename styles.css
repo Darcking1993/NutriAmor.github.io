@@ -6,7 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('images/background.webp'); /* Ruta de la imagen */
+  background-image: url('imagenes/background.webp'); /* Ruta de la imagen */
   background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que se repita */
@@ -76,4 +76,42 @@ button.toggle-btn {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
+}
+
+.menu-container {
+  display: flex;
+  gap: 20px; /* Espaciado entre los cuadros */
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: #00bfa5;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #008f7a;
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
 }
